@@ -3,10 +3,10 @@
     
     <modelVersion>4.0.0</modelVersion>
     <groupId>com</groupId>
-    <artifactId>webservice_cliente_jaxrs_rest</artifactId>
+    <artifactId>webservice_cadastrocliente_jaxrs_rest</artifactId>
     <version>1</version>
     <packaging>war</packaging>
-    <name>webservice_cliente_jaxrs_rest</name>
+    <name>webservice_cadastrocliente_jaxrs_rest</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
