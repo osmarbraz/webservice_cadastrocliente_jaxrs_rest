@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página de início</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Recurso Cliente JAX-RS REST</h1>    
+        
+        <h2>Serviço getLista</h2>         
+        URL de acesso: <a href="rest/cliente">rest/cliente</a><br><br>
+        Comando:<code>curl http://localhost:8080/webservice_cliente_jaxrs_rest/rest/cliente</code><br>
+        
+        <h2>Serviço getCliente(string)</h2>            
+        URL de acesso: <a href="rest/cliente/1">rest/cliente/1</a><br><br>
+        Comando:<code>curl http://localhost:8080/webservice_cliente_jaxrs_rest/rest/cliente/1</code><br>
+                
+        <h2>Serviço inserir(Cliente)</h2>    
+        Comando:<code>curl -v -X POST -H "Content-Type: application/json" -d "{\"clienteId\":\"3\",\"nome\":\"Pedro\",\"cpf\":\"45678912399\"}" http://localhost:8080/webservice_cliente_jaxrs_rest/rest/cliente</code>
+        
+        <h2>Serviço alterar(Cliente)</h2>    
+        Comando:<code>curl -v -X PUT -H "Content-Type: application/json" -d "{\"clienteId\":\"3\",\"nome\":\"Antônio\",\"cpf\":\"2222222222\"}" http://localhost:8080/webservice_cliente_jaxrs_rest/rest/cliente</code>
+        
+        <h2>Serviço excluir(clienteId)</h2>    
+        Comando:<code>curl -v -X DELETE http://localhost:8080/webservice_cliente_jaxrs_rest/rest/cliente/3</code>
+    </body>
+</html>
